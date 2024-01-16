@@ -36,7 +36,7 @@ const NewMeetup = () => {
 
   return (
     <section>
-      <h1>Add New Meetup</h1>
+      <h1>Add New Meetups</h1>
 
       <NewMeetupForm
         onAddMeetup={addMeetupHandler}
