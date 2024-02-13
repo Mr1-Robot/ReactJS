@@ -1,0 +1,25 @@
+.path-tracker {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.path-tracker .line {
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: #757575;
+  border-radius: 50%;
+}
+
+.path-tracker .prev {
+  color: #4f4f4f;
+}
+
+.path-tracker .slash {
+  color: #757575;
+}
+
+.path-tracker .current {
+  color: #000;
+}

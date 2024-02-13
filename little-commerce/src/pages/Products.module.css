@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .link {
+  color: #fff;
+  background-color: orangered;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  transition: all 0.2s ease;
+}
+.header .link:hover {
+  background-color: orange;
+  scale: 1.03;
+}
+
+@media (max-width: 968px) {
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+}

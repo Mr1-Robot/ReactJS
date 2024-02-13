@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Paytone";
+  font-display: swap;
+  src: url("./assets/fonts/Paytone_One/PaytoneOne-Regular.ttf"), format("tff");
+}
+
+main {
+  padding: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  color: #2c2c2c;
+  font-family: Paytone;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  padding-top: 4rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+  display: block;
+}
+
+body {
+  background: url("./assets/texture.svg"),
+    linear-gradient(140deg, #ffd29b 6.02%, #f2ab8f 31.95%, #a0e7ea 77.38%);
+  min-height: 100vh;
+}

@@ -1,0 +1,157 @@
+.container {
+  max-width: 60rem;
+  background: url("../assets/texture.svg"), #fff;
+  margin: 4rem auto 0 auto;
+
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 35rem;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.image .buttons {
+  position: absolute;
+  top: 89%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buttons button {
+  padding: 1rem 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.buttons button svg {
+  transition: all 0.2s ease;
+}
+
+.buttons button:nth-child(1) {
+  background-color: #000;
+}
+
+.buttons button:nth-child(1):hover {
+  transform: scale(1.05);
+  background-color: orangered;
+}
+
+.buttons button:nth-child(2) {
+  transform: rotate(180deg);
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.buttons button:nth-child(2) svg {
+  stroke: #000;
+}
+.buttons button:nth-child(2):hover {
+  transform: rotate(180deg) scale(1.05);
+  background-color: orangered;
+}
+
+.buttons button:nth-child(2):hover svg,
+.buttons button:nth-child(1):hover svg {
+  transform: translateX(-0.2rem);
+  stroke: #fff;
+}
+
+.buttons button:nth-child(1):disabled,
+.buttons button:nth-child(2):disabled {
+  background-color: #9d9d9d;
+}
+.buttons button:disabled:hover {
+  background-color: #9d9d9d;
+  transform: rotate(180deg) scale(1);
+}
+.buttons button:nth-child(2):disabled:hover {
+  transform: scale(1);
+}
+.buttons button:disabled svg {
+  stroke: #525252;
+}
+.buttons button:disabled:hover svg {
+  stroke: #525252;
+  transform: none;
+}
+
+.content {
+  padding: 2rem 1rem;
+}
+
+.content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content .price {
+  margin: 2rem 0;
+  font-size: 1.7rem;
+}
+
+.content .cta {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  font-family: Paytone, sans-serif;
+  color: #fff;
+  background-color: orangered;
+
+  animation: shake 1.5s linear infinite;
+  transition: all 0.2s ease;
+}
+
+.content .cta:hover {
+  animation: none;
+  background-color: orange;
+}
+
+.content .cta:active {
+  transform: scale(0.95);
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(1deg) scale(1.02);
+  }
+  50% {
+    transform: rotate(-1deg) scale(0.95);
+  }
+  100% {
+    transform: rotate(1deg) scale(1.02);
+  }
+}
+
+@media (max-width: 600px) {
+  .buttons button {
+    padding: 0.5rem;
+  }
+
+  .buttons button svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .content .cta {
+    width: 100%;
+  }
+}

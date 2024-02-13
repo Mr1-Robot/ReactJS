@@ -1,0 +1,116 @@
+.header {
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+  padding: 2rem 1rem;
+  position: sticky;
+  inset: 0;
+  z-index: 999999;
+
+  background: url("../assets/texture.svg"),
+    linear-gradient(140deg, #ffd29b 6.02%, #f2ab8f 31.95%, #a0e8ea79 77.38%);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.list {
+  list-style: none;
+  font-family: Paytone, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.list li a {
+  transition: all 0.1s ease-in;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.list li:hover a {
+  color: orangered;
+}
+
+.list li a.active {
+  color: orangered;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.actions figure {
+  cursor: pointer;
+  position: relative;
+}
+
+.cart .badge {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  background-color: orangered;
+  color: #fff;
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: grid;
+  place-items: center;
+}
+
+.cart,
+.cart path {
+  transition: all 0.2s ease;
+}
+.cart:hover {
+  transform: scale(1.05);
+}
+.cart:hover path {
+  stroke: orangered;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .list {
+    position: absolute;
+    background: url("../assets/texture.svg"), rgb(244, 162, 107);
+    backdrop-filter: blur(0.5rem);
+    top: 100%;
+    opacity: 0;
+    pointer-events: none;
+    right: 0;
+    width: 100%;
+    padding: 2rem 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    flex-direction: column;
+  }
+
+  .list.active {
+    transition: all 0.3s ease;
+    pointer-events: all;
+    opacity: 1;
+  }
+
+  .burger {
+    display: block;
+  }
+}

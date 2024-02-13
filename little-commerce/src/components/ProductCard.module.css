@@ -1,0 +1,95 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.product-card:hover .figure {
+  transform: scale(1.05);
+}
+
+.product-card .figure {
+  width: 100%;
+  height: 18rem;
+  transition: transform 0.2s ease;
+}
+
+.product-card .figure img {
+  object-fit: cover;
+}
+
+.product-card .text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.product-card .text .title-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  gap: 1rem;
+}
+
+.title-price div {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.title-price div h2 {
+  font-size: 1.2rem;
+}
+
+.title-price strong {
+  font-size: 1.2rem;
+  color: rgb(173, 46, 0);
+}
+
+.product-card .text p {
+  font-size: 0.9rem;
+}
+
+.product-card .text .brand {
+  color: #fff;
+  background-color: crimson;
+  padding: 0.3rem 0.5rem;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  width: fit-content;
+}
+
+.product-card .actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.product-card .actions button:nth-child(1) {
+  flex: 1;
+  background-color: rgb(255, 69, 0);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: Paytone;
+  font-size: 1rem;
+}
+
+.product-card .actions button,
+.product-card .actions .link {
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+}
+
+.product-card .actions .link {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+}

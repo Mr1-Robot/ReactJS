@@ -1,0 +1,20 @@
+.footer {
+  padding: 3rem 0 0.2rem 0;
+  text-align: center;
+}
+
+.footer p {
+  color: #393939;
+}
+
+.footer p a {
+  color: #000;
+  display: inline;
+  margin-left: 0.4rem;
+  transition: all 0.2s ease;
+  filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.2));
+}
+
+.footer p a:hover {
+  color: orangered;
+}

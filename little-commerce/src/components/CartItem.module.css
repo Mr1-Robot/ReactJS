@@ -1,0 +1,56 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.item img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 0.2rem;
+  object-fit: cover;
+}
+
+.item h2 {
+  font-size: 1rem;
+}
+
+.item .actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item .actions span {
+  font-size: 1.2rem;
+}
+
+.item button {
+  color: #000;
+  background-color: rgb(251, 204, 115);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  transition: all 0.2s ease;
+}
+
+.item button svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+@media (max-width: 600px) {
+  .item img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .item h2 {
+    font-size: 1rem;
+  }
+
+  .item .actions {
+    gap: 0.5rem;
+  }
+}

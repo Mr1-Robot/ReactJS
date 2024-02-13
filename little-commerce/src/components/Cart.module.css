@@ -1,0 +1,92 @@
+.container {
+  position: fixed;
+  right: 0;
+  max-width: 40rem;
+  width: 100%;
+  min-height: 100vh;
+  background: url("../assets/texture.svg"), #fff;
+  z-index: 10;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+}
+
+.header button svg path {
+  transition: stroke 0.3s ease;
+}
+.header button:hover svg path {
+  stroke: crimson;
+}
+
+.items {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 30rem;
+  overflow-y: scroll;
+  list-style: none;
+}
+
+.container .checkout {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  font-family: Paytone, serif;
+  background-color: #ff4500;
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+.container .checkout a {
+  color: #fff;
+}
+
+.checkout:disabled {
+  background-color: #717171;
+}
+
+.checkout:disabled a {
+  color: #d0d0d0;
+}
+
+.items .empty-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.empty-cart img {
+  width: 18rem;
+  height: 18rem;
+}
+
+.empty-cart a {
+  background-color: #fff;
+  color: orangered;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 2rem 0.5rem;
+  }
+
+  .items {
+    gap: 1rem;
+  }
+}
